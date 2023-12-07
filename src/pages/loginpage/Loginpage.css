@@ -9,4 +9,10 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  margin-left: 70px;
+}
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -10,34 +10,53 @@ const Loginpage = () => {
     password: "",
     email: "",
   });
+
   const navigate = useNavigate();
   const handleForm = (e) => {
     e.preventDefault(); //prevent page from refreshing
     localStorage.setItem("user", JSON.stringify(form));
 
-    navigate("/addphoto");
+    navigate("/dasboard");
+  };
+  const [isChecked, setIsChecked] = useState(false);
+
+  const handleCheckboxChange = () => {
+    setIsChecked(!isChecked);
   };
   return (
     <div className="grid-container">
-      <form onSubmit={handleForm}>
-        <TextInput
-          type="email"
-          name="email"
-          label="Email"
-          placeholder="u@gmail.com"
-          required={true}
-          onChange={(value) => setForm({ ...form, email: value })}
-        />
-        <br />
-        <TextInput
-          type="Password"
-          name="password"
-          label="Password"
-          required={true}
-          onChange={(value) => setForm({ ...form, password: value })}
-        />
-        <Button type="submit" label="login" className="button" />
-      </form>
+      <div className="form-container">
+        <form onSubmit={handleForm}>
+          <TextInput
+            type="name"
+            name="name"
+            label="Name"
+            required={true}
+            onChange={(value) => setForm({ ...form, email: value })}
+          />
+          <br />
+          <TextInput
+            type="Password"
+            name="password"
+            label="Password"
+            required={true}
+            onChange={(value) => setForm({ ...form, password: value })}
+          />
+          <div>
+            <label>
+              <input
+                type="checkbox"
+                checked={isChecked}
+                onChange={handleCheckboxChange}
+              />
+              keep me signed in
+            </label>
+          </div>
+
+          <br />
+          <Button type="submit" label="Login" className="button" />
+        </form>
+      </div>
       <div className="image-box">
         <img src={Picture} alt="" className="main-image" />
       </div>
