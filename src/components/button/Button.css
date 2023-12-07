@@ -1,0 +1,88 @@
+.button {
+  display: flex;
+  width: 532px;
+  height: 79px;
+  padding: 28px 242px 27px 236px;
+  align-items: center;
+  flex-shrink: 0;
+  background: #dd5757;
+
+  color: white;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.08px;
+  cursor: pointer;
+}
+
+.button5 {
+  display: flex;
+  padding: 6px 0px;
+  width: 232px;
+  height: 36px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 100px;
+  background: #0267ff;
+  margin-top: 2rem;
+}
+.button6 {
+  display: flex;
+  padding: 6px 0px;
+  width: 232px;
+  height: 36px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 100px;
+  background: white;
+  margin-top: 1rem;
+  border: 1px solid var(--gray-700, #b3b3b3);
+}
+.button7 {
+  display: flex;
+  padding: 6px 0px;
+  width: 232px;
+  height: 36px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 100px;
+  background: white;
+  margin-top: 1rem;
+  border: 1px solid var(--gray-700, #b3b3b3);
+}
+.button8 {
+  display: flex;
+  padding: 6px 0px;
+  width: 232px;
+  height: 36px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 100px;
+  background: white;
+  margin-top: 1rem;
+  border: 1px solid var(--gray-700, #b3b3b3);
+}
+.button9 {
+  display: flex;
+  padding: 6px 0px;
+  width: 232px;
+  height: 36px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 100px;
+  background: white;
+  margin-top: 1rem;
+  border: 1px solid var(--gray-700, #b3b3b3);
+}
