@@ -1,18 +1,47 @@
 .grid-container {
   display: grid;
-  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
   width: 100%;
   grid-template-columns: 50% 50%;
+  place-items: center;
 }
 .image-box {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  margin-left: 70px;
+  max-height: 100vh;
 }
-.form-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.image-box image {
+  max-height: 100vh;
+}
+
+.form-text p {
+  color: #868fa0;
+  font-family: Inter;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.form-container .form-text {
+  text-align: center;
+  color: #868fa0;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 1000;
+  line-height: normal;
+}
+
+.form-container form {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #dd5757;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-align: center;
 }
