@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Damion&family=Inter&family=Roboto:wght@300&display=swap");
+
 .grid-container {
   display: grid;
   max-height: 100vh;
@@ -9,8 +11,10 @@
 .image-box {
   max-height: 100vh;
 }
-.image-box image {
+.image-box img {
   max-height: 100vh;
+  margin-left: 300px;
+  max-width: 100%;
 }
 
 .form-text p {
@@ -20,6 +24,7 @@
   font-style: normal;
   font-weight: 800;
   line-height: normal;
+  font-family: "Inter", sans-serif;
 }
 .form-container .form-text {
   text-align: center;

@@ -27,7 +27,7 @@ const Loginpage = () => {
     <div className="grid-container">
       <div className="form-container">
         <div className="form-text">
-          <p>Welcome Back!</p>
+          <p>Welcome back!</p>
 
           <p>
             <h1>INTRN</h1>
