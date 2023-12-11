@@ -1,8 +1,13 @@
 import React from "react";
+import Layout from "../../components/layout/Layout";
+import "./Assessment.css"
 
 const Assessment = () => {
   return (
-    <div>Assessment</div>
+    <Layout>
+       
+      
+    </Layout>
   );
 };
 
