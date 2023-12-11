@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import { IoMdArrowDropdown } from "react-icons/io";
 import "./Navbar.css";
 
-const Navbar = ({ cartItems }) => {
+const Navbar = ({}) => {
   const [isLoggedIn, setIsLoggedIn] = useState(true);
 
   return (
@@ -17,7 +17,7 @@ const Navbar = ({ cartItems }) => {
                 alt=""
                 className="profile-image"
               />
-              <span>Kelvin</span>
+              <span>Kelvin </span>
               <IoMdArrowDropdown />
             </div>
           ) : (

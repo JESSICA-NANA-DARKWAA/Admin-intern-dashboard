@@ -1,0 +1,45 @@
+.main-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.card {
+  padding: 5px 15px;
+  border-radius: 10px;
+  border: 1px solid #e9edf5;
+  width: 327px;
+  height: 137px;
+  background: #fcf1f1;
+  /* display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 8px 15px;
+    border-radius: 5px; */
+}
+
+.card-inner h3 {
+  color: #646464;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.card h1 {
+  color: #000;
+  font-size: 48px;
+  font-weight: 900;
+}
+.secondary-navbars {
+  width: 711px;
+  height: 107px;
+  flex-shrink: 0;
+  border-radius: 10px 10px 0px 0px;
+  background: #dd5757;
+  color: white;
+}
+.second-text {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}

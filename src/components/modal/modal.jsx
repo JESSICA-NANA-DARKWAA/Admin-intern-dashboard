@@ -1,17 +1,20 @@
-import React, { useState } from "react";
-import "./Modal.css";
+import React from "react";
+import "./modal.css";
 
-function Modal({ isOpen, onClose }) {
+function Modal({ isOpen, children }) {
   if (!isOpen) {
     return null;
   }
 
+  const handleOverlayClick = (e) => {
+    if (e.target === e.currentTarget) {
+      onClose();
+    }
+  };
+
   return (
-    <div className="modal-overlay">
-      <div className="modal-content">
-        <h2>Register Intern</h2>
-        <button onClick={onClose}>Close</button>
-      </div>
+    <div className="modal-overlay" onClick={handleOverlayClick}>
+      <div className="modal-content">{children}</div>
     </div>
   );
 }
