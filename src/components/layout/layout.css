@@ -1,8 +1,8 @@
 .layout-container {
   display: grid;
-  display: grid;
+  
   max-height: 100vh;
   overflow: hidden;
   width: 100%;
-  grid-template-columns: 28% 72%;
+  grid-template-columns: 1fr 1fr;
 }

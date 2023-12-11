@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Layout from "../../../components/layout/Layout";
-import Modal from "../../../components/modal/modal";
+import "./Dashboard.css";
+
 const Dashboard = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const handleOpenModal = () => {
@@ -11,13 +12,28 @@ const Dashboard = () => {
   };
 
   return (
-    <div>
-      <Layout>
-        {/*<h1>Intern Dashboard</h1>
-        <button onClick={handleOpenModal}>Register Intern</button>
-  <Modal isOpen={isModalOpen} onClose={handleCloseModal} />*/}
-      </Layout>
-    </div>
+    <Layout>
+      <div className="main-cards">
+        <div className="card">
+          <div className="card-inner">
+            <h3>Total number of interns</h3>
+          </div>
+          <h1>100</h1>
+        </div>
+        <div className="card">
+          <div className="card-inner">
+            <h3>Total number in Accra</h3>
+          </div>
+          <h1>50</h1>
+        </div>
+        <div className="card">
+          <div className="card-inner">
+            <h3>Total number in Takoradi</h3>
+          </div>
+          <h1>50</h1>
+        </div>
+      </div>
+    </Layout>
   );
 };
 

@@ -3,13 +3,15 @@ import Navbar from "../navbar/Navbar";
 import "./Layout.css";
 import Sidebar from "../sidebar/Sidebar";
 
-const Layout = ({ navbar, children }) => {
+const Layout = ({ children }) => {
   return (
     <div className="layout-container">
       <Sidebar />
-      <Navbar />
-      {navbar}
-      {children}
+      <div>
+        <Navbar />
+
+        {children}
+      </div>
     </div>
   );
 };
