@@ -16,7 +16,7 @@ const Loginpage = () => {
     e.preventDefault(); //prevent page from refreshing
     localStorage.setItem("user", JSON.stringify(form));
 
-    navigate("/dasboard");
+    navigate("/dashboard");
   };
   const [isChecked, setIsChecked] = useState(false);
 
