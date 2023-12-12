@@ -1,13 +1,13 @@
 .button {
   display: flex;
-  width: 532px;
+  width: 500px;
   height: 79px;
   padding: 28px 242px 27px 236px;
   align-items: center;
   flex-shrink: 0;
   background: #dd5757;
   border: 1px solid var(--gray-700, #b3b3b3);
-
+  margin-right: 40px;
   color: white;
   font-family: Inter;
   font-size: 16px;
