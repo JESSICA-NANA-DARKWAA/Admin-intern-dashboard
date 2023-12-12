@@ -25,13 +25,10 @@ const Loginpage = () => {
   };
   return (
     <div className="grid-container">
-      <div className="form-container">
+      <div className="form-container-home">
         <div className="form-text">
           <p>Welcome back!</p>
-
-          <p>
-            <h1>INTRN</h1>
-          </p>
+          <h1>INTRN</h1>
         </div>
         <form onSubmit={handleForm}>
           <TextInput
@@ -64,9 +61,7 @@ const Loginpage = () => {
           <Button type="submit" label="Login" className="button" />
         </form>
       </div>
-      <div className="image-box">
-        <img src={Picture} alt="" className="main-image" />
-      </div>
+      <div className="image-box"></div>
     </div>
   );
 };

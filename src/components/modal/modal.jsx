@@ -14,7 +14,9 @@ function Modal({ isOpen, children }) {
 
   return (
     <div className="modal-overlay" onClick={handleOverlayClick}>
-      <div className="modal-content">{children}</div>
+      <div className="modal">
+        <div className="modal-content">{children}</div>
+      </div>
     </div>
   );
 }
