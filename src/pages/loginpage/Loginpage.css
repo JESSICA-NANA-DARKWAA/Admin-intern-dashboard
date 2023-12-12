@@ -26,6 +26,7 @@
   line-height: normal;
   font-family: "Inter", sans-serif;
 }
+
 .form-container .form-text {
   text-align: center;
   color: #868fa0;
@@ -34,11 +35,7 @@
   font-style: normal;
   font-weight: 1000;
   line-height: normal;
-}
-
-.form-container form {
-  width: fit-content;
-  margin: 0 auto;
+  background-color: red;
 }
 
 h1 {

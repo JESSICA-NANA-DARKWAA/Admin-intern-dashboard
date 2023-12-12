@@ -54,7 +54,7 @@ const Interns = ({ onClose }) => {
           <nav className="add-nav">
             <p>Add new intern</p>
             <div className="modal-close" onClick={onClose}>
-              <IoClose />
+              <IoClose size={30} />
             </div>
           </nav>
           <form className="form-div-container">
@@ -159,7 +159,8 @@ const Interns = ({ onClose }) => {
                   onChange={handleInputChange}
                 />
               </label>
-              <label>
+
+              <label className="form-label">
                 About:
                 <input
                   className="form-input2"

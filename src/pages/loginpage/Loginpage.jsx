@@ -25,13 +25,10 @@ const Loginpage = () => {
   };
   return (
     <div className="grid-container">
-      <div className="form-container">
+      <div className="form-container-home">
         <div className="form-text">
           <p>Welcome back!</p>
-
-          <p>
-            <h1>INTRN</h1>
-          </p>
+          <h1>INTRN</h1>
         </div>
         <form onSubmit={handleForm}>
           <TextInput
