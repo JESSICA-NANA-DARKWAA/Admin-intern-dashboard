@@ -4,6 +4,7 @@ import { MdOutlineDashboard } from "react-icons/md";
 import { MdPeopleAlt } from "react-icons/md";
 import { FaFile } from "react-icons/fa";
 import { FaSignOutAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 function Sidebar() {
   return (
     <div className="sidebar">
@@ -12,15 +13,22 @@ function Sidebar() {
           <p>INTRN</p>
           <li>
             <MdOutlineDashboard />
-            Dashboard
+            <Link to="/dashboard" className="Dash-btn">
+               Dashboard
+            </Link>
           </li>
           <li>
             <MdPeopleAlt />
-            Interns
+            <Link to="/interns" className="intern-btn">
+               intern
+            </Link>
           </li>
           <li>
             <FaFile />
-            Assesement
+
+            <Link to="/assessment" className="Dash-btn">
+               assessment
+            </Link>
           </li>
           <div className="logout-btn">
             <FaSignOutAlt /> Sign out
