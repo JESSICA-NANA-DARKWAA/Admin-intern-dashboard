@@ -14,20 +14,20 @@ function Sidebar() {
           <li>
             <MdOutlineDashboard />
             <Link to="/dashboard" className="Dash-btn">
-               Dashboard
+              Dashboard
             </Link>
           </li>
           <li>
             <MdPeopleAlt />
             <Link to="/interns" className="intern-btn">
-               intern
+              intern
             </Link>
           </li>
           <li>
             <FaFile />
 
             <Link to="/assessment" className="Dash-btn">
-               assessment
+              assessment
             </Link>
           </li>
           <div className="logout-btn">

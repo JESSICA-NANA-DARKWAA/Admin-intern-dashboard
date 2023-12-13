@@ -1,0 +1,23 @@
+h3 {
+  color: ghostwhite;
+  margin-bottom: 1rem;
+}
+.search-nav {
+  text-decoration: none;
+  margin-left: 10px;
+}
+.assess-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1072px;
+  height: 30px;
+  padding: 10px;
+  position: absolute;
+  border-radius: 10px 10px 0px 0px;
+  border: 1px solid #e9edf5;
+  background: rgba(247, 249, 252, 0.8);
+  background-color: gray;
+  opacity: 0.5;
+  margin-top: 1rem;
+}
