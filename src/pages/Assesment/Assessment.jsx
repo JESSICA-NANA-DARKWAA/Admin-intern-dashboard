@@ -1,14 +1,33 @@
 import React, { useState } from "react";
+import Search from "../../components/search/search";
 import Layout from "../../components/layout/Layout";
 import "./Assessment.css";
 
-
-const assessment= () => {
+const Assessment = () => {
+  const handleSearch = (query) => {
+    console.log("Search query:", query);
+  };
+  const [isChecked, setIsChecked] = useState(false);
+  const handleCheckboxChange = () => {
+    setIsChecked(!isChecked);
+  };
   return (
     <Layout>
-
+      <div className="search-nav">
+        <Search onSearch={handleSearch} />
+      </div>
+      <nav className="assess-nav">
+        <label>
+          <input
+            type="checkbox"
+            checked={isChecked}
+            onChange={handleCheckboxChange}
+          />
+        </label>
+        <h3>ID</h3> <h3>IMAGE</h3> <h3>NAME </h3>
+        <h3>EMAIL</h3> <h3>STATUS</h3> <h3>ACTION</h3>
+      </nav>
     </Layout>
-      );
-    };
-    
-    export default assessment;
+  );
+};
+export default Assessment;

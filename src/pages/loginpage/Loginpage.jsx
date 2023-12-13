@@ -10,16 +10,13 @@ const Loginpage = () => {
     password: "",
     email: "",
   });
-
   const navigate = useNavigate();
   const handleForm = (e) => {
     e.preventDefault(); //prevent page from refreshing
     localStorage.setItem("user", JSON.stringify(form));
-
     navigate("/dashboard");
   };
   const [isChecked, setIsChecked] = useState(false);
-
   const handleCheckboxChange = () => {
     setIsChecked(!isChecked);
   };
@@ -56,7 +53,6 @@ const Loginpage = () => {
               keep me signed in
             </label>
           </div>
-
           <br />
           <Button type="submit" label="Login" className="button" />
         </form>
@@ -65,5 +61,4 @@ const Loginpage = () => {
     </div>
   );
 };
-
 export default Loginpage;

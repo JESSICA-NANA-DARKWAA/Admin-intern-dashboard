@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Modal from "../../components/modal/modal";
+import { Link } from "react-router-dom";
 import Layout from "../../components/layout/Layout";
 import "./interns.css";
 import { IoMdAdd } from "react-icons/io";
@@ -27,7 +28,7 @@ const Interns = ({ onClose }) => {
   const [newIntern, setNewIntern] = useState(INITIALVALUE);
 
   const handleCloseModal = () => {
-    setIsModalOpen(false);
+    setIsModalOpen(true);
   };
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -54,7 +55,9 @@ const Interns = ({ onClose }) => {
           <nav className="add-nav">
             <p>Add new intern</p>
             <div className="modal-close" onClick={onClose}>
-              <IoClose size={30} />
+              <Link to="/">
+                <IoClose size={30} />
+              </Link>
             </div>
           </nav>
           <form className="form-div-container">

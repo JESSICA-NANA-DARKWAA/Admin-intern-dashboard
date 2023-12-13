@@ -3,7 +3,6 @@ import "./Button.css";
 
 const Button = (props) => {
   const { onClick, label, disabled = false, className, type } = props;
-
   return (
     <button
       className={className}
@@ -15,5 +14,4 @@ const Button = (props) => {
     </button>
   );
 };
-
 export default Button;

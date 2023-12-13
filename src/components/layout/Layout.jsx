@@ -9,11 +9,9 @@ const Layout = ({ children }) => {
       <Sidebar />
       <div>
         <Navbar />
-
         {children}
       </div>
     </div>
   );
 };
-
 export default Layout;
