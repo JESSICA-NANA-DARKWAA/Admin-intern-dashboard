@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
+import Layout from "../../components/layout/Layout";
+import "./Assessment.css";
 
-const Assessment = () => {
+
+const assessment= () => {
   return (
-    <div>Assessment</div>
-  );
-};
+    <Layout>
 
-export default Assessment;
+    </Layout>
+      );
+    };
+    
+    export default assessment;

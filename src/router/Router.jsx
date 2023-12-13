@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Loginpage from "../pages/loginpage/Loginpage";
-import Dashboard from "../pages/dashboard/Dashboard";
+import Dashboard from "../pages/Dashboard/Dashboard";
 import Interns from "../pages/Interns/Interns";
 import Assessment from "../pages/Assesment/Assessment";
 const AppRouter = () => {
