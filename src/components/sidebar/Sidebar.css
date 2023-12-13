@@ -20,14 +20,12 @@
   padding: 0;
   margin: 0;
 }
-
 .sidebar nav ul li {
   margin-bottom: 10px;
   cursor: pointer;
   color: white;
   margin-top: 4rem;
 }
-
 .sidebar nav ul li:hover {
   color: #ffffff;
   background-color: rosybrown;

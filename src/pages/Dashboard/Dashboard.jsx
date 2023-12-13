@@ -26,12 +26,10 @@ const Dashboard = () => {
         </div>
         <nav className="secondary-navbars">
           <h2> Upcoming Events</h2>
-
           <div className="second-text">Date Time Office Mode</div>
         </nav>
       </div>
     </Layout>
   );
 };
-
 export default Dashboard;

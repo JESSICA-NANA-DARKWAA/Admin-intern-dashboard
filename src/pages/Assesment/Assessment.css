@@ -1,5 +1,5 @@
 h3 {
-  color: ghostwhite;
+  color: gray;
   margin-bottom: 1rem;
 }
 .search-nav {
@@ -17,7 +17,5 @@ h3 {
   border-radius: 10px 10px 0px 0px;
   border: 1px solid #e9edf5;
   background: rgba(247, 249, 252, 0.8);
-  background-color: gray;
-  opacity: 0.5;
   margin-top: 1rem;
 }

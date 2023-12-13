@@ -25,7 +25,6 @@ function Sidebar() {
           </li>
           <li>
             <FaFile />
-
             <Link to="/assessment" className="Dash-btn">
               assessment
             </Link>
@@ -33,10 +32,9 @@ function Sidebar() {
           <div className="logout-btn">
             <FaSignOutAlt /> Sign out
           </div>
-          {/* Add more navigation items as needed */}
         </ul>
       </nav>
-      <div className="user-profile">{/* User profile content */}</div>
+      <div className="user-profile"></div>
     </div>
   );
 }

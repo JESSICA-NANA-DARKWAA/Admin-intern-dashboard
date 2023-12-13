@@ -4,7 +4,6 @@ import "./Navbar.css";
 
 const Navbar = ({}) => {
   const [isLoggedIn, setIsLoggedIn] = useState(true);
-
   return (
     <div className="dashboard-container">
       <div className="sidebar-container"> </div>
@@ -35,5 +34,4 @@ const Navbar = ({}) => {
     </div>
   );
 };
-
 export default Navbar;
