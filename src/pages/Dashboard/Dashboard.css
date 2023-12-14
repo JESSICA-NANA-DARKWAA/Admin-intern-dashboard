@@ -2,7 +2,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
-  margin: 15px 0;
+  margin: 100px 0 15px 0;
+
+
 }
 
 .card {
@@ -12,34 +14,72 @@
   width: 327px;
   height: 137px;
   background: #fcf1f1;
-  /* display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 8px 15px;
-    border-radius: 5px; */
+  font-family: inter;
+position: relative;  
+overflow: hidden;
 }
 
 .card-inner h3 {
   color: #646464;
   font-size: 16px;
   font-weight: 400;
+  font-family: inter;
 }
 
 .card h1 {
   color: #000;
   font-size: 48px;
   font-weight: 900;
+  font-family: inter;
 }
-.secondary-navbars {
-  width: 711px;
-  height: 107px;
-  flex-shrink: 0;
-  border-radius: 10px 10px 0px 0px;
-  background: #dd5757;
-  color: white;
+
+table.upcoming-events{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: #FCF1F1;
+  border-spacing: 0;
+  font-family: inter;
+
 }
-.second-text {
-  display: flex;
-  justify-content: space-between;
+
+table.upcoming-events thead{
+  background-color: #dd5757;
   color: white;
+
+}
+
+th, td {
+  padding: 0;
+  text-align: left;
+  padding: 10px;
+}
+
+th.th-header{
+  text-align: left;
+  font-size: 30px;
+
+}
+table.upcoming-events  thead .actual-header th{
+}
+table.upcoming-events tbody td{
+}
+.icon-img{
+  /* display: flex;
+  justify-content: end; */
+}
+
+
+.aaa{
+  font-size: 100px;
+}
+
+
+.card-icon{
+  background-color: #dd5757;
+  width: fit-content;
+  color: white;
+  padding: 5px 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
 }

@@ -11,27 +11,27 @@ function Sidebar() {
       <nav>
         <ul>
           <p>INTRN</p>
-          <li>
+          <li className="sidebar-link">
             <MdOutlineDashboard />
             <Link to="/dashboard" className="Dash-btn">
               Dashboard
             </Link>
           </li>
-          <li>
+          <li className="sidebar-link">
             <MdPeopleAlt />
             <Link to="/interns" className="intern-btn">
-              intern
+              Intern
             </Link>
           </li>
-          <li>
+          <li className="sidebar-link">
             <FaFile />
             <Link to="/assessment" className="Dash-btn">
-              assessment
+              Assessment
             </Link>
           </li>
-          <div className="logout-btn">
+          <Link className="logout-btn">
             <FaSignOutAlt /> Sign out
-          </div>
+          </Link>
         </ul>
       </nav>
       <div className="user-profile"></div>
