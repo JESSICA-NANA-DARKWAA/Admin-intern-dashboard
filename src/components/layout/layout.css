@@ -1,7 +1,17 @@
 .layout-container {
-  display: grid;
+  /* display: grid; */
+height: 100vh;
   max-height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
   width: 100%;
-  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-content{
+margin-left: 15%;
+
+  width: 85vw;
 }
