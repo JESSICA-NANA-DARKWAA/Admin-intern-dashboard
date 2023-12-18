@@ -9,7 +9,7 @@ function Sidebar() {
   return (
     <div className="sidebar">
       <nav>
-        <ul>
+    
           <p>INTRN</p>
           <li className="sidebar-link">
             <MdOutlineDashboard />
@@ -29,10 +29,11 @@ function Sidebar() {
               Assessment
             </Link>
           </li>
-          <Link className="logout-btn">
+          <Link to="/" className="logout-btn">
             <FaSignOutAlt /> Sign out
           </Link>
-        </ul>
+          
+        
       </nav>
       <div className="user-profile"></div>
     </div>

@@ -36,7 +36,7 @@
 .logout-btn {
   display: flex;
   text-align: start;
-  margin-top: 15rem;
+  margin-top: 20rem;
   padding: 1rem 0;
   flex-shrink: 0;
   border-radius: 5px;
@@ -47,6 +47,7 @@
   color: #dd5757;
   cursor: pointer;
   text-decoration: none;
+  font-family:inter ;
   
 }
 
@@ -54,10 +55,13 @@
   color: white;
   display: flex;
   font-size: 16px;
+  font-family:inter ;
+  font-weight: 500;
 }
 
 .sidebar-link a{
 margin-left: 5px;
   color: white;
   text-decoration: none;
+  font-family: inter;
 }

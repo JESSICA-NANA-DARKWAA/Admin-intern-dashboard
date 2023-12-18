@@ -33,11 +33,14 @@ overflow: hidden;
   font-family: inter;
 }
 
+table{
+  border-spacing: 0;
+}
+
 table.upcoming-events{
   grid-column-start: 1;
   grid-column-end: 3;
   background-color: #FCF1F1;
-  border-spacing: 0;
   font-family: inter;
 
 }
@@ -63,10 +66,7 @@ table.upcoming-events  thead .actual-header th{
 }
 table.upcoming-events tbody td{
 }
-.icon-img{
-  /* display: flex;
-  justify-content: end; */
-}
+
 
 
 .aaa{
@@ -82,4 +82,26 @@ table.upcoming-events tbody td{
   position: absolute;
   right: 0;
   top: 0;
+
+}
+
+.end-soon{
+  height: fit-content;
+  background-color: #FCF1F1;
+  font-family: inter;
+}
+
+.end-soon thead{
+  background-color: #dd5757;
+  color: white;
+  color: #FFF;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.end-soon tbody td{
+color: black ;
 }
