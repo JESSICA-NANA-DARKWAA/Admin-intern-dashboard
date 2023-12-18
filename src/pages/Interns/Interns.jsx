@@ -55,7 +55,7 @@ const Interns = ({ onClose }) => {
           <nav className="add-nav">
             <p>Add new intern</p>
             <div className="modal-close" onClick={onClose}>
-              <Link to="/">
+              <Link to="/Assessment">
                 <IoClose size={30} />
               </Link>
             </div>
