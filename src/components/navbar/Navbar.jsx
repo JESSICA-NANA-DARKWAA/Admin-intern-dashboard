@@ -17,6 +17,7 @@ const Navbar = ({}) => {
                 className="profile-image"
               />
               <span>Kelvin </span>
+
               <IoMdArrowDropdown />
             </div>
           ) : (
