@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Layout from "../../components/layout/Layout";
 import "./Dashboard.css";
 import { HiUserGroup } from "react-icons/hi2";
-import { GrGroup } from "react-icons/gr";
 
 const Dashboard = () => {
   return (
@@ -10,7 +9,7 @@ const Dashboard = () => {
       <div className="main-cards">
         <div className="card">
           <div className="card-icon">
-            <GrGroup />
+            <HiUserGroup />
           </div>
 
           <div className="card-inner">
@@ -18,12 +17,11 @@ const Dashboard = () => {
           </div>
           <div className="icon-img">
             <h1>100</h1>
-            {/* <HiUserGroup className="aaa" /> */}
           </div>
         </div>
         <div className="card">
           <div className="card-icon">
-            <GrGroup />
+            <HiUserGroup />
           </div>
           <div className="card-inner">
             <h3>Total number in Accra</h3>
@@ -32,7 +30,7 @@ const Dashboard = () => {
         </div>
         <div className="card">
           <div className="card-icon">
-            <GrGroup />
+            <HiUserGroup />
           </div>
           <div className="card-inner">
             <h3>Total number in Takoradi</h3>
@@ -125,84 +123,70 @@ const Dashboard = () => {
               <td>Accra</td>
               <td>In person</td>
             </tr>{" "}
-            <tr>
-              <td>01/12/2023</td>
-              <td>10:15am</td>
-              <td>General meeting</td>
-              <td>Accra</td>
-              <td>In person</td>
-            </tr>{" "}
-            <tr>
-              <td>01/12/2023</td>
-              <td>10:15am</td>
-              <td>General meeting</td>
-              <td>Accra</td>
-              <td>In person</td>
-            </tr>{" "}
-            <tr>
-              <td>01/12/2023</td>
-              <td>10:15am</td>
-              <td>General meeting</td>
-              <td>Accra</td>
-              <td>In person</td>
-            </tr>{" "}
-            <tr>
-              <td>01/12/2023</td>
-              <td>10:15am</td>
-              <td>General meeting</td>
-              <td>Accra</td>
-              <td>In person</td>
-            </tr>{" "}
-            <tr>
-              <td>01/12/2023</td>
-              <td>10:15am</td>
-              <td>General meeting</td>
-              <td>Accra</td>
-              <td>In person</td>
-            </tr>{" "}
-            <tr>
-              <td>01/12/2023</td>
-              <td>10:15am</td>
-              <td>General meeting</td>
-              <td>Accra</td>
-              <td>In person</td>
-            </tr>{" "}
-            <tr>
-              <td>01/12/2023</td>
-              <td>10:15am</td>
-              <td>General meeting</td>
-              <td>Accra</td>
-              <td>In person</td>
-            </tr>{" "}
-            <tr>
-              <td>01/12/2023</td>
-              <td>10:15am</td>
-              <td>General meeting</td>
-              <td>Accra</td>
-              <td>In person</td>
-            </tr>{" "}
-            <tr>
-              <td>01/12/2023</td>
-              <td>10:15am</td>
-              <td>General meeting</td>
-              <td>Accra</td>
-              <td>In person</td>
-            </tr>{" "}
-            <tr>
-              <td>01/12/2023</td>
-              <td>10:15am</td>
-              <td>General meeting</td>
-              <td>Accra</td>
-              <td>In person</td>
-            </tr>{" "}
-            <tr>
-              <td>01/12/2023</td>
-              <td>10:15am</td>
-              <td>General meeting</td>
-              <td>Accra</td>
-              <td>In person</td>
-            </tr>
           </tbody>
+        </table>
+
+        <table className="end-soon">
+          <thead>
+            <tr>
+              <th colSpan={2} className="th-header">
+                Internships ending soon
+              </th>
+            </tr>
+            <tr className="actual-header">
+              <th>Names</th>
+              <th>Days Left</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ernestine Brobbey</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>Ernestine Brobbey</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>Ernestine Brobbey</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>Ernestine Brobbey</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>Ernestine Brobbey</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>Ernestine Brobbey</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>Ernestine Brobbey</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>Ernestine Brobbey</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>Ernestine Brobbey</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>Ernestine Brobbey</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>Ernestine Brobbey</td>
+              <td>3</td>
+            </tr>
+
+          
+            </tbody>
+          
         </table>
       </div>
     </Layout>
