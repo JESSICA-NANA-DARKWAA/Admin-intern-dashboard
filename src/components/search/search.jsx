@@ -1,30 +1,9 @@
-import React, { useState } from "react";
-import "./search.css";
-import { FaSearch } from "react-icons/fa";
+import React from "react";
 
-const Search = ({ onSearch }) => {
-  const [searchQuery, setSearchQuery] = useState("");
-  const [filteredInterns, setFilteredInterns] = useState([]);
-  const handleInputChange = (event) => {
-    setSearchQuery(event.target.value);
-  };
-  const handleFormSubmit = (event) => {
-    event.preventDefault();
-    onSearch(searchQuery);
-  };
+function Search() {
   return (
-    <form onSubmit={handleFormSubmit} className="search-form">
-      <input
-        type="text"
-        placeholder="Search "
-        value={searchQuery}
-        onChange={handleInputChange}
-        className="search-input"
-      />
-      <button type="submit" className="search-button">
-        <FaSearch />
-      </button>
-    </form>
+    <div className="app">
+      <input type="text" placeholder="search..." className="search" />
+    </div>
   );
-};
-export default Search;
+}

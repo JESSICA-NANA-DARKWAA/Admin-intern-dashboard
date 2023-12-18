@@ -4,6 +4,7 @@ import Loginpage from "../pages/loginpage/Loginpage";
 import Dashboard from "../pages/dashboard/Dashboard";
 import Interns from "../pages/Interns/Interns";
 import Assessment from "../pages/Assesment/Assessment";
+
 const AppRouter = () => {
   return (
     <Router>

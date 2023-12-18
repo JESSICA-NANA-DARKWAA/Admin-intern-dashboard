@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Search from "../../components/search/search";
 import Layout from "../../components/layout/Layout";
 import "./Assessment.css";
 
@@ -13,9 +12,7 @@ const Assessment = () => {
   };
   return (
     <Layout>
-      <div className="search-nav">
-        <Search onSearch={handleSearch} />
-      </div>
+      <div className="search-nav"></div>
       <nav className="assess-nav">
         <label>
           <input
