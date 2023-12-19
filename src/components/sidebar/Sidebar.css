@@ -8,26 +8,23 @@
   background: #dd5757;
   position: fixed;
 }
-.sidebar P {
+.sidebar p {
   color: white;
-
+  margin-bottom: 2rem;
   font-family: Inter;
   font-size: 32px;
   font-style: normal;
   font-weight: 800;
-  line-height: normal;
 }
 .sidebar nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-
 }
 .sidebar nav ul li {
   margin-bottom: 10px;
   cursor: pointer;
   color: white;
-  margin-top: 1rem;
 }
 .sidebar nav ul li:hover {
   color: #ffffff;
@@ -47,20 +44,17 @@
   color: #dd5757;
   cursor: pointer;
   text-decoration: none;
-  font-family:inter ;
-  
+  font-family: inter;
 }
-
-.sidebar-link{
+.sidebar-link {
   color: white;
   display: flex;
   font-size: 16px;
-  font-family:inter ;
+  font-family: inter;
   font-weight: 500;
 }
-
-.sidebar-link a{
-margin-left: 5px;
+.sidebar-link a {
+  margin-left: 5px;
   color: white;
   text-decoration: none;
   font-family: inter;

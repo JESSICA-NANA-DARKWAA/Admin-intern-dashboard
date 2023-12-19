@@ -9,31 +9,28 @@ function Sidebar() {
   return (
     <div className="sidebar">
       <nav>
-    
-          <p>INTRN</p>
-          <li className="sidebar-link">
-            <MdOutlineDashboard />
-            <Link to="/dashboard" className="Dash-btn">
-              Dashboard
-            </Link>
-          </li>
-          <li className="sidebar-link">
-            <MdPeopleAlt />
-            <Link to="/interns" className="intern-btn">
-              Intern
-            </Link>
-          </li>
-          <li className="sidebar-link">
-            <FaFile />
-            <Link to="/assessment" className="Dash-btn">
-              Assessment
-            </Link>
-          </li>
-          <Link to="/" className="logout-btn">
-            <FaSignOutAlt /> Sign out
+        <p>INTRN</p>
+        <li className="sidebar-link">
+          <MdOutlineDashboard />
+          <Link to="/dashboard" className="Dash-btn">
+            Dashboard
           </Link>
-          
-        
+        </li>
+        <li className="sidebar-link">
+          <MdPeopleAlt />
+          <Link to="/interns" className="intern-btn">
+            Intern
+          </Link>
+        </li>
+        <li className="sidebar-link">
+          <FaFile />
+          <Link to="/assessment" className="Dash-btn">
+            Assessment
+          </Link>
+        </li>
+        <Link to="/" className="logout-btn">
+          <FaSignOutAlt /> Sign out
+        </Link>
       </nav>
       <div className="user-profile"></div>
     </div>
