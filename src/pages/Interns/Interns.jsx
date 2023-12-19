@@ -5,6 +5,7 @@ import Layout from "../../components/layout/Layout";
 import "./interns.css";
 import { IoMdAdd } from "react-icons/io";
 import { IoClose } from "react-icons/io5";
+import Search from "../../components/search/search";
 
 const INITIALVALUE = {
   name: "",
@@ -47,7 +48,6 @@ const Interns = ({ onClose }) => {
     <Layout>
       <div>
         <div onClick={handleOpenModal} className="add-btn">
-          {" "}
           <IoMdAdd />
           Add new intern
         </div>
@@ -55,7 +55,7 @@ const Interns = ({ onClose }) => {
           <nav className="add-nav">
             <p>Add new intern</p>
             <div className="modal-close" onClick={onClose}>
-              <Link to="/Assessment">
+              <Link to="/Dashboard">
                 <IoClose size={30} />
               </Link>
             </div>
@@ -195,6 +195,8 @@ const Interns = ({ onClose }) => {
           </button>
         </Modal>
       </div>
+
+      <Search />
     </Layout>
   );
 };

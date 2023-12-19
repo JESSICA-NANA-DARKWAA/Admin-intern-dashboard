@@ -1,6 +1,6 @@
-.dashboard-container{
-position: fixed;
-z-index: 10;
+.dashboard-container {
+  position: fixed;
+  z-index: 10;
 }
 
 .navbar {
