@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import Modal from "../../components/modal/modal";
 import { Link } from "react-router-dom";
 import Layout from "../../components/layout/Layout";
@@ -6,14 +6,15 @@ import "./interns.css";
 import { IoMdAdd } from "react-icons/io";
 import { IoClose } from "react-icons/io5";
 import Search from "../../components/search/search";
+import { AppContext } from "../../AppContext";
 
 const INITIALVALUE = {
   name: "",
   email: "",
   phone: "",
   location: "",
-  internshipstartdate: "",
-  intershipenddate: "",
+  internshipStartDate: "",
+  intershipEndDate: "",
   universityCollegede: "",
   feildofstudy: "",
   gender: "",
@@ -22,6 +23,8 @@ const INITIALVALUE = {
 };
 
 const Interns = ({ onClose }) => {
+  const { dispatch } = useContext(AppContext);
+
   const [isModalOpen, setIsModalOpen] = useState(false);
   const handleOpenModal = () => {
     setIsModalOpen(true);
@@ -39,7 +42,13 @@ const Interns = ({ onClose }) => {
     }));
   };
   const handleRegisterIntern = () => {
-    console.log("New Intern:", newIntern);
+    console.log("kbslablablabslabsalb");
+    console.log("kbslablablabslabsalb");
+    console.log("kbslablablabslabsalb");
+    dispatch({
+      type: "ADD",
+      payload: newIntern,
+    });
     setNewIntern(INITIALVALUE);
     handleCloseModal();
   };
@@ -97,7 +106,7 @@ const Interns = ({ onClose }) => {
                 <input
                   className="form-input"
                   type="location"
-                  name="Location "
+                  name="location"
                   value={newIntern.location}
                   onChange={handleInputChange}
                 />
@@ -106,9 +115,9 @@ const Interns = ({ onClose }) => {
                 Internship start date:
                 <input
                   className="form-input"
-                  type="text"
-                  name="start-date "
-                  value={newIntern.date}
+                  type="date"
+                  name="internshipStartDate"
+                  value={newIntern.internshipStartDate}
                   onChange={handleInputChange}
                 />
               </label>
@@ -116,9 +125,9 @@ const Interns = ({ onClose }) => {
                 Internship end date:
                 <input
                   className="form-input"
-                  type="text"
-                  name="start-date "
-                  value={newIntern.date}
+                  type="date"
+                  name="intershipEndDate"
+                  value={newIntern.intershipEndDate}
                   onChange={handleInputChange}
                 />
               </label>
