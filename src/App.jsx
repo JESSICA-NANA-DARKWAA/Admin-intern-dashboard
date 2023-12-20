@@ -1,12 +1,13 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
 import "./App.css";
 import Router from "./router/Router";
+import AppContextProvider from "./AppContext";
 
 function App() {
   return (
     <>
-      <Router />
+      <AppContextProvider>
+        <Router />
+      </AppContextProvider>
     </>
   );
 }

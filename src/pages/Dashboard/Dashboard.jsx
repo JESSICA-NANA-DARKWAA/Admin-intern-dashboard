@@ -1,9 +1,15 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import Layout from "../../components/layout/Layout";
 import "./Dashboard.css";
+import { AppContext } from "../../AppContext";
+
 import { HiUserGroup } from "react-icons/hi2";
 
 const Dashboard = () => {
+  const { data, dispatch } = useContext(AppContext);
+
+  console.log(data);
+
   return (
     <Layout>
       <div className="main-cards">
@@ -16,7 +22,7 @@ const Dashboard = () => {
             <h3>Total number of interns</h3>
           </div>
           <div className="icon-img">
-            <h1>100</h1>
+            <h1>{data.totalNumberOfInterns}</h1>
           </div>
         </div>
         <div className="card">
@@ -26,7 +32,7 @@ const Dashboard = () => {
           <div className="card-inner">
             <h3>Total number in Accra</h3>
           </div>
-          <h1>50</h1>
+          <h1>{data.totalNumberInAccra}</h1>
         </div>
         <div className="card">
           <div className="card-icon">
@@ -35,7 +41,7 @@ const Dashboard = () => {
           <div className="card-inner">
             <h3>Total number in Takoradi</h3>
           </div>
-          <h1>50</h1>
+          <h1>{data.totalNumberInTakoradi}</h1>
         </div>
         <table className="upcoming-events">
           <thead>
@@ -139,54 +145,21 @@ const Dashboard = () => {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>Ernestine Brobbey</td>
-              <td>3</td>
-            </tr>
-            <tr>
-              <td>Ernestine Brobbey</td>
-              <td>3</td>
-            </tr>
-            <tr>
-              <td>Ernestine Brobbey</td>
-              <td>3</td>
-            </tr>
-            <tr>
-              <td>Ernestine Brobbey</td>
-              <td>3</td>
-            </tr>
-            <tr>
-              <td>Ernestine Brobbey</td>
-              <td>3</td>
-            </tr>
-            <tr>
-              <td>Ernestine Brobbey</td>
-              <td>3</td>
-            </tr>
-            <tr>
-              <td>Ernestine Brobbey</td>
-              <td>3</td>
-            </tr>
-            <tr>
-              <td>Ernestine Brobbey</td>
-              <td>3</td>
-            </tr>
-            <tr>
-              <td>Ernestine Brobbey</td>
-              <td>3</td>
-            </tr>
-            <tr>
-              <td>Ernestine Brobbey</td>
-              <td>3</td>
-            </tr>
-            <tr>
-              <td>Ernestine Brobbey</td>
-              <td>3</td>
-            </tr>
-
-          
-            </tbody>
-          
+            {data.interns.map((item) => {
+              return (
+                <tr>
+                  <td>{item.name}</td>
+                  <td>
+                    {Math.ceil(
+                      (new Date(item.endDate).getTime() -
+                        new Date(item.startDate).getTime()) /
+                        (1000 * 60 * 60 * 24)
+                    )}
+                  </td>
+                </tr>
+              );
+            })}
+          </tbody>
         </table>
       </div>
     </Layout>
