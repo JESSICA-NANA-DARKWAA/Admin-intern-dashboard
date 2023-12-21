@@ -1,36 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Damion&family=Inter&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Damion&family=Inter&display=swap");
 .modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 9999;
   border: 1px solid #c5c5c5;
-  font-family: 'Inter', sans-serif !important;
+  font-family: "Inter", sans-serif !important;
 }
 
 .modal {
   /* Add additional styles for the modal */
   width: 1100px;
   background-color: #fff;
-  font-family: 'Inter', sans-serif !important;
+  font-family: "Inter", sans-serif !important;
 }
 
-/* Modal Content */
 .modal-content {
-  background-color: #fff;
+  background-color: green;
 
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-  display: block;
-  font-family: 'Inter', sans-serif !important;
+  margin-bottom: 3rem;
 }
 
-/* Modal Close Button */
 .modal-close {
   background-color: transparent;
   border: none;
@@ -39,25 +35,53 @@
   cursor: pointer;
   display: flex;
   justify-content: end;
-  margin-left: 700px;
+  margin-left: 500px;
 }
 
-/* Modal Close Button Hover */
 .modal-close:hover {
-  color: #333;
+  color: white;
 }
 
-/* Additional Styling */
 .modal-content h2 {
   font-size: 20px;
   margin-bottom: 20px;
-  font-family: 'Inter', sans-serif !important;
-
+  font-family: "Inter", sans-serif !important;
 }
 
 .modal-content p {
   margin-bottom: 20px;
   color: black;
-  font-family: 'Inter', sans-serif !important;
+  font-family: "Inter", sans-serif !important;
+}
 
+@media screen and (min-width: 500px) {
+  .modal-content {
+    width: --whatever you want--;
+    height: --whatever you want--;
+    background: red;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .modal-content {
+    width: --whatever you want--;
+    height: --whatever you want--;
+    background: green;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .modal-content {
+    width: --whatever you want--;
+    height: --whatever you want--;
+    background: indigo;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .modal-content {
+    width: --whatever you want--;
+    height: --whatever you want--;
+    background: aliceblue;
+  }
 }

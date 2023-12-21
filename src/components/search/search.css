@@ -23,11 +23,13 @@
   cursor: pointer;
   border: 1px solid var(--gray-900, #999);
 }
+
 .show-content {
   margin-left: 500px;
   margin-bottom: 2rem;
   color: gray;
 }
+
 .show {
   display: flex;
   padding: 4px;

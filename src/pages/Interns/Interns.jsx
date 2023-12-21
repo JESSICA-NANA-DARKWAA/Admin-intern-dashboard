@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import Modal from "../../components/modal/modal";
 import { Link } from "react-router-dom";
 import Layout from "../../components/layout/Layout";
-import "./interns.css";
+import "./Interns.css";
 import { IoMdAdd } from "react-icons/io";
 import { IoClose } from "react-icons/io5";
 import Search from "../../components/search/search";
@@ -32,7 +32,7 @@ const Interns = ({ onClose }) => {
   const [newIntern, setNewIntern] = useState(INITIALVALUE);
 
   const handleCloseModal = () => {
-    setIsModalOpen(true);
+    setIsModalOpen(false);
   };
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -70,11 +70,9 @@ const Interns = ({ onClose }) => {
         <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
           <nav className="add-nav">
             <p>Add new intern</p>
-            <div className="modal-close" onClick={onClose}>
-              <Link to="/Dashboard">
-                <IoClose size={30} />
-              </Link>
-            </div>
+            <button className="modal-close-1" onClick={handleCloseModal}>
+              <IoClose size={30} className="close-btn" />
+            </button>
           </nav>
           <form className="form-div-container">
             <div className="form-container">
@@ -177,7 +175,7 @@ const Interns = ({ onClose }) => {
                 />
               </label>
 
-              <label className="form-label">
+              <label className="form-label2">
                 About:
                 <input
                   className="form-input2"
