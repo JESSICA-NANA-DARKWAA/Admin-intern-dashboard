@@ -12,10 +12,12 @@ function Search() {
   const search = () => {
     return users.filter(
       (item) =>
-        item.Name.includes(searchQuery) ||
-        item.Email.includes(searchQuery) ||
-        item.Phone.includes(searchQuery) ||
-        item.id.includes(searchQuery)
+        item.Name.toLowerCase().includes(searchQuery.toLocaleLowerCase()) ||
+        item.Email.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        item.Phone.toLocaleLowerCase().includes(
+          searchQuery.toLocaleLowerCase()
+        ) ||
+        item.id.toLocaleLowerCase().includes(searchQuery.toLocaleLowerCase())
     );
   };
   const handleSearch = () => {
