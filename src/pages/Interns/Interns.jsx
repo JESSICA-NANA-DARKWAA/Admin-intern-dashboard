@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import Modal from "../../components/modal/modal";
 import { Link } from "react-router-dom";
 import Layout from "../../components/layout/Layout";
-import "./Interns.css";
+import "./Intern.css";
 import { IoMdAdd } from "react-icons/io";
 import { IoClose } from "react-icons/io5";
 import Search from "../../components/search/search";

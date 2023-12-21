@@ -21,14 +21,15 @@
 }
 
 .modal-content {
-  background-color: green;
+  /* background-color: green; */
+  background-color: white;
 
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
   margin-bottom: 3rem;
 }
 
 .modal-close {
-  background-color: transparent;
+  /* background-color: transparent; */
   border: none;
   color: white;
   font-size: 16px;
@@ -58,7 +59,7 @@
   .modal-content {
     width: --whatever you want--;
     height: --whatever you want--;
-    background: red;
+    /* background: red; */
   }
 }
 
@@ -66,7 +67,7 @@
   .modal-content {
     width: --whatever you want--;
     height: --whatever you want--;
-    background: green;
+    /* background: green; */
   }
 }
 
@@ -74,7 +75,7 @@
   .modal-content {
     width: --whatever you want--;
     height: --whatever you want--;
-    background: indigo;
+    /* background: indigo; */
   }
 }
 
@@ -82,6 +83,6 @@
   .modal-content {
     width: --whatever you want--;
     height: --whatever you want--;
-    background: aliceblue;
+    /* background: aliceblue; */
   }
 }
