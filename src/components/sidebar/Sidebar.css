@@ -10,7 +10,8 @@
 }
 .sidebar p {
   color: white;
-  margin-bottom: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 7rem;
   font-family: Inter;
   font-size: 32px;
   font-style: normal;
@@ -33,7 +34,7 @@
 .logout-btn {
   display: flex;
   text-align: start;
-  margin-top: 30rem;
+  margin-top: 20rem;
   padding: 1rem 0;
   flex-shrink: 0;
   border-radius: 5px;
@@ -49,9 +50,10 @@
 .sidebar-link {
   color: white;
   display: flex;
-  font-size: 16px;
+  font-size: 18px;
   font-family: inter;
-  font-weight: 500;
+margin-top: 48px;
+  font-weight: 700;
 }
 .sidebar-link a {
   margin-left: 5px;

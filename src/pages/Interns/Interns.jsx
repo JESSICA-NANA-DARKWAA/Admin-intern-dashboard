@@ -53,13 +53,20 @@ const Interns = ({ onClose }) => {
     handleCloseModal();
   };
 
+  const handleSelect = (e) => {
+    const { value } = e.target;
+    setNewIntern((state) => ({ ...state, location: value }));
+  };
   return (
     <Layout>
       <div>
-        <div onClick={handleOpenModal} className="add-btn">
-          <IoMdAdd />
-          Add new intern
+        <div className="add-btn-div">
+          <button onClick={handleOpenModal} className="add-btn">
+            <IoMdAdd className="btn-icon" />
+            Add new intern
+          </button>
         </div>
+
         <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
           <nav className="add-nav">
             <p>Add new intern</p>
@@ -103,13 +110,14 @@ const Interns = ({ onClose }) => {
               </label>
               <label className="form-label">
                 Location:
-                <input
+                <select
                   className="form-input"
-                  type="location"
-                  name="location"
+                  onChange={handleSelect}
                   value={newIntern.location}
-                  onChange={handleInputChange}
-                />
+                >
+                  <option value="Accra">Accra</option>
+                  <option value="Takoradi">Takoradi</option>
+                </select>
               </label>
               <label className="form-label">
                 Internship start date:
@@ -153,13 +161,10 @@ const Interns = ({ onClose }) => {
               </label>
               <label className="form-label">
                 Gender:
-                <input
-                  className="form-input"
-                  type="text"
-                  name="gender"
-                  value={newIntern.gender}
-                  onChange={handleInputChange}
-                />
+                <select className="form-input">
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                </select>
               </label>
               <label className="form-label">
                 Focus:
