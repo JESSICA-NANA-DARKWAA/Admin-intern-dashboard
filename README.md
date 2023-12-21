@@ -1,10 +1,10 @@
-# ReactJS Project - Readme
+# Admin Intern Dashboard - Readme
 
-This is a simple readme file to provide an overview and instructions for a ReactJS project.
+This is a simple readme file to provide an overview and instructions for an Admin Intern Dashboard.
 
 ## Project Description
 
-This project is a ReactJS application that aims to [provide a brief description of the project's purpose or functionality].
+This project is a Admin Intern Dashboard application that aims to [provide details of intern active in the company and also the number of days they have left].
 
 ## Installation
 

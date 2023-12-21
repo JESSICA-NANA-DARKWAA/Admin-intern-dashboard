@@ -2,10 +2,12 @@ h3 {
   color: gray;
   margin-bottom: 1rem;
 }
+
 .search-nav {
   text-decoration: none;
   margin-left: 10px;
 }
+
 .assess-nav {
   display: flex;
   justify-content: space-between;

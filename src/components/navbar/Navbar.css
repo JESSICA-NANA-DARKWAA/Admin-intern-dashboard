@@ -8,22 +8,25 @@
   justify-content: center;
   background-color: #dd5757;
   padding: 10px;
-  width: 85vw;
-  height: 60px;
+  width: 80vw;
+  height: 40px;
   border-radius: 5px;
   align-items: center;
 }
+
 .account-box {
   display: flex;
   align-items: end;
-  margin-left: 280px;
+  /* margin-left: 280px; */
 }
+
 .profile-wrapper {
   color: white;
   display: flex;
   align-items: center;
   margin-left: 900px;
 }
+
 .profile-image {
   width: 30px;
   height: 30px;
