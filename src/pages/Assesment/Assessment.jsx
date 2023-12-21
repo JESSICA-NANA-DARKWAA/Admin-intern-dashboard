@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Layout from "../../components/layout/Layout";
 import "./Assessment.css";
-import Search from "../../components/search/Search";
 const Assessment = () => {
   const handleSearch = (query) => {
     console.log("Search query:", query);

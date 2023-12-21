@@ -3,8 +3,6 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
   margin: 100px 0 15px 0;
-
-
 }
 
 .card {
@@ -15,8 +13,8 @@
   height: 137px;
   background: #fcf1f1;
   font-family: inter;
-position: relative;  
-overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .card-inner h3 {
@@ -33,48 +31,45 @@ overflow: hidden;
   font-family: inter;
 }
 
-table{
+table {
   border-spacing: 0;
 }
 
-table.upcoming-events{
+table.upcoming-events {
   grid-column-start: 1;
   grid-column-end: 3;
-  background-color: #FCF1F1;
+  background-color: #fcf1f1;
   font-family: inter;
-
 }
 
-table.upcoming-events thead{
+table.upcoming-events thead {
   background-color: #dd5757;
   color: white;
-
 }
 
-th, td {
+th,
+td {
   padding: 0;
   text-align: left;
   padding: 10px;
 }
 
-th.th-header{
+th.th-header {
   text-align: left;
   font-size: 30px;
-
-}
-table.upcoming-events  thead .actual-header th{
-}
-table.upcoming-events tbody td{
 }
 
+table.upcoming-events thead .actual-header th {
+}
 
+table.upcoming-events tbody td {
+}
 
-.aaa{
+.aaa {
   font-size: 100px;
 }
 
-
-.card-icon{
+.card-icon {
   background-color: #dd5757;
   width: fit-content;
   color: white;
@@ -82,26 +77,25 @@ table.upcoming-events tbody td{
   position: absolute;
   right: 0;
   top: 0;
-
 }
 
-.end-soon{
+.end-soon {
   height: fit-content;
-  background-color: #FCF1F1;
+  background-color: #fcf1f1;
   font-family: inter;
 }
 
-.end-soon thead{
+.end-soon thead {
   background-color: #dd5757;
   color: white;
-  color: #FFF;
-font-family: Inter;
-font-size: 16px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+  color: #fff;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
-.end-soon tbody td{
-color: black ;
+.end-soon tbody td {
+  color: black;
 }

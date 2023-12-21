@@ -30,7 +30,13 @@ const AppContextProvider = ({ children }) => {
           action.payload.location === "Takoradi"
             ? state.data.totalNumberInTakoradi + 1
             : state.data.totalNumberInTakoradi;
-  console.log({newIntern,newInterns,newTotalNumberInAccra,newTotalNumberInTakoradi,newTotalNumberOfInterns})
+        console.log({
+          newIntern,
+          newInterns,
+          newTotalNumberInAccra,
+          newTotalNumberInTakoradi,
+          newTotalNumberOfInterns,
+        });
         return {
           ...state,
           data: {

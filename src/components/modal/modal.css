@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Damion&family=Inter&display=swap");
+
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -14,21 +15,18 @@
 }
 
 .modal {
-  /* Add additional styles for the modal */
   width: 850px;
   background-color: #fff;
   font-family: "Inter", sans-serif !important;
 }
 
 .modal-content {
-  /* background-color: green; */
   background-color: white;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
   margin-bottom: -3rem;
 }
 
 .modal-close {
-  /* background-color: transparent; */
   border: none;
   color: white;
   font-size: 16px;
@@ -56,32 +54,28 @@
 
 @media screen and (min-width: 500px) {
   .modal-content {
-    width: --whatever you want--;
-    height: --whatever you want--;
-    /* background: red; */
+    width: 700px;
+    height: 300px;
   }
 }
 
 @media screen and (min-width: 600px) {
   .modal-content {
-    width: --whatever you want--;
-    height: --whatever you want--;
-    /* background: green; */
+    width: 800px;
+    height: 400px;
   }
 }
 
 @media screen and (min-width: 800px) {
   .modal-content {
-    width: --whatever you want--;
-    height: --whatever you want--;
-    /* background: indigo; */
+    width: 900px;
+    height: 500px;
   }
 }
 
 @media screen and (min-width: 1100px) {
   .modal-content {
-    width: --whatever you want--;
-    height: --whatever you want--;
-    /* background: aliceblue; */
+    width: 500px;
+    height: 300px;
   }
 }
