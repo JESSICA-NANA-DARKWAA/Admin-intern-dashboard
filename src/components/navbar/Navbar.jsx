@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import { IoMdArrowDropdown } from "react-icons/io";
 import "./Navbar.css";
 
-const Navbar = ({}) => {
+const Navbar = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(true);
   return (
     <div className="dashboard-container">
