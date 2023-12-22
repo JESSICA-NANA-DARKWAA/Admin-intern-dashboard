@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { internData as users } from "../../internData";
-import Table from "../../table";
+import { internData as users } from "../../data/internData";
+import Table from "../../data/table";
 import "./Search.css";
 import { IoIosSearch } from "react-icons/io";
 

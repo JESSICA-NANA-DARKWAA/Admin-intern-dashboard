@@ -59,13 +59,7 @@ th.th-header {
   font-size: 30px;
 }
 
-table.upcoming-events thead .actual-header th {
-}
-
-table.upcoming-events tbody td {
-}
-
-.aaa {
+table.upcoming-events thead .actual-header th .aaa {
   font-size: 100px;
 }
 
